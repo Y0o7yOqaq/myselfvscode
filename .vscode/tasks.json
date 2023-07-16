@@ -1,0 +1,154 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "echo",
+            "type": "process",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "F:\\vscodework\\Cwork\\${fileBasenameNoExtension}.exe",
+                "-fexec-charset=UTF-8"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "C/C++: g++.exe build active file",
+            "command": "D:\\MinGw64\\bin\\g++.exe",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "F:\\vscodework\\C++work\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe 生成活动文件",
+            "command": "D:\\MinGw64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "F:\\vscodework\\C++work\\${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "编译器: D:\\MinGw64\\bin\\g++.exe"
+        },
+        {
+            "type": "shell",
+            "label": "g++.exe build active file",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "F:\\vscodework\\Cwork\\${fileBasenameNoExtension}.exe",
+                "-fexec-charset=UTF-8"
+            ],
+            "options": {
+                "cwd": "D:/MinGW64/bin"
+            },
+            "group": "build"
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: gcc.exe 生成活动文件",
+            "command": "D:/MinGW64/bin/gcc.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "F:\\vscodework\\Cwork\\${fileBasenameNoExtension}.exe",
+                "-fexec-charset=UTF-8"
+            ],
+            "options": {
+                "cwd": "D:/MinGW64/bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "调试器生成的任务。"
+        },
+        {
+            "label": "win86",
+            "type": "shell",
+            "command": "nasm.exe -f bin -o assembly\\${fileBasenameNoExtension}.bin assembly\\${fileBasenameNoExtension}.asm ",
+            "problemMatcher": {
+                "pattern": {
+                    "regexp": "error"
+                }
+            },
+            "group": "build",
+            "presentation": {
+                "focus": true,
+                "panel": "dedicated",
+                "reveal": "silent",
+                "clear": true
+            }
+        },
+        /* {
+            "label": "win86",
+            "type": "shell",
+            "command": "nasm.exe -f win32 -g -F cv8 -l assembly\\${fileBasenameNoExtension}.lst assembly\\${fileBasenameNoExtension}.asm && gcc assembly\\${fileBasenameNoExtension}.obj -o assembly\\${fileBasenameNoExtension}.exe -lmsvcrt",
+            "problemMatcher": {
+                "pattern": {
+                    "regexp": "error"
+                }
+            },
+            "group": "build",
+            "presentation": {
+                "focus": true,
+                "panel": "dedicated",
+                "reveal": "silent",
+                "clear": true
+            }
+        },
+        {
+            "label": "win64",
+            "type": "shell",
+            "command": "nasm.exe -f win64 -g -F cv8 -l assembly\\${fileBasenameNoExtension}.lst assembly\\${fileBasenameNoExtension}.asm && gcc assembly\\${fileBasenameNoExtension}.obj -o assembly\\${fileBasenameNoExtension}.exe -lmsvcrt",
+            "problemMatcher": {
+                "pattern": {
+                    "regexp": "error"
+                }
+            },
+            "group": "build",
+            "presentation": {
+                "focus": true,
+                "panel": "dedicated",
+                "reveal": "silent",
+                "clear": true
+            }
+        } */
+    ],
+    "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "new",
+        "showReuseMessage": false,
+        "clear": true
+    }
+}

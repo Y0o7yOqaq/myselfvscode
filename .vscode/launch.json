@@ -1,0 +1,127 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "c++(gdb)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "F:\\vscodework\\C++work\\${fileBasenameNoExtension}.exe",
+            "preLaunchTask": "C/C++: g++.exe build active file",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "D:/MinGw64/bin/gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "为 gdb 启用整齐打印",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+        },
+        {
+            "name": "C++ Launch",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "C:\\Windows\\System32\\cmd.exe",
+            "preLaunchTask": "C/C++: g++.exe build active file",
+            "args": [
+                "/C",
+                "F:\\vscodework\\C++work\\${fileBasenameNoExtension}.exe",
+                "&",
+                "echo.",
+                "&",
+                "pause"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "c(gdb)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "F:\\vscodework\\Cwork\\${fileBasenameNoExtension}.exe",
+            "preLaunchTask": "echo",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "D:/MinGw64/bin/gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "为 gdb 启用整齐打印",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+        },
+        {
+            "name": "C Launch",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "C:\\Windows\\System32\\cmd.exe",
+            "preLaunchTask": "echo",
+            "args": [
+                "/C",
+                "F:\\vscodework\\Cwork\\${fileBasenameNoExtension}.exe",
+                "&",
+                "echo.",
+                "&",
+                "pause"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python(debug launch))",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": false,
+            "program": "${file}",
+            "console": "externalTerminal",
+            "justMyCode": true
+        },
+        {
+            "type": "java",
+            "name": "java Launch/Debug",
+            "request": "launch",
+            "mainClass": "${file}",
+            "console": "externalTerminal"
+        },
+        {
+            "name": "bin",
+            "type": "gdb",
+            "request": "launch",
+            "program": "C:\\Windows\\System32\\success.exe",
+            "stopOnEntry": false,
+            "preLaunchTask": "win86"
+        },
+        /* {
+            "name": "GDB64",
+            "type": "by-gdb",
+            "request": "launch",
+            "program": "F:\\vscodework\\assembly\\${fileBasenameNoExtension}.exe",
+            "stopOnEntry": true, 
+            "preLaunchTask": "win64"
+        } */
+    ]
+}

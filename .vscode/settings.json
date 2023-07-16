@@ -1,0 +1,46 @@
+{
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./pythonpath",
+        "-p",
+        "*test.py"
+    ],
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.formatting.provider": "none",
+    "python.linting.flake8Args": [
+        "--max-line-length=1000"
+    ],
+    "python.linting.pylintEnabled": false,
+    "python.defaultInterpreterPath": "D:\\apps\\python3\\python.exe",
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        "*.C": "c",
+        "*.cpp": "cpp",
+        "stdio.h": "c",
+        "7-1.1.C": "cpp",
+        "malloc.h": "c",
+        "iostream": "cpp"
+    },
+    "java.project.outputPath": "javawork\\class",
+    "java.project.sourcePaths": [
+        "javawork",
+        "javawork\\study",
+        "javawork\\work",
+        "javawork\\school"
+    ],
+    "java.jdt.ls.java.home": "D:\\Java\\jdk-17.0.3.1",
+    /*     "editor.suggestSelection": "first",
+    "C_Cpp.default.compilerPath": "\"\"", */
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "C_Cpp.errorSquiggles": "enabledIfIncludesResolve",
+    "C_Cpp.intelliSenseEngine": "default",
+    "C_Cpp.intelliSenseEngineFallback": "enabled",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.autopep8"
+    },
+    "git.useEditorAsCommitInput": false,
+}
